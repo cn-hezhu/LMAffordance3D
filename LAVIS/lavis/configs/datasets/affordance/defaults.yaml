@@ -1,0 +1,17 @@
+ # Copyright (c) 2024
+ # All rights reserved.
+
+datasets:
+  affordance_dataset: # name of the dataset builder
+    build_info:
+      type: 'Seen' # 'Unseen'
+      annotations:
+        train:
+          point_path: 'data/Seen/Point_Train.txt'
+          img_path: 'data/Seen/Img_Train.txt'
+          description_path: 'data/Seen/Description_Train.txt'
+        val:
+          point_path: 'data/Seen/Point_Test.txt'
+          img_path: 'data/Seen/Img_Test.txt'
+          description_path: 'data/Seen/Description_Test.txt'
+
