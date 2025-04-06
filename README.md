@@ -10,37 +10,41 @@ Grounding 3D object affordance is a task that locates objects in 3D space where 
 ## Dataset
 Download data at [Google Drive](https://drive.google.com/file/d/1G7yobBCQYhPqsDY6Im7ax94akoq9pcn1/view?usp=sharing) and organize as follows:
 ```
-data
-└-── Full_view
-│    ├── Seen
-│    │   ├── Description
-│    │   ├── Img
-│    │   └── Point
-│    └── Unseen
-│        ├── Description
-│        ├── Img
-│        └── Point
-└-── Partial_view
-│    ├── Seen
-│    │   ├── Description
-│    │   ├── Img
-│    │   └── Point
-│    └── Unseen
-│        ├── Description
-│        ├── Img
-│        └── Point
-└-── Rotation_view
-     ├── Seen
-     │   ├── Description
-     │   ├── Img
-     │   └── Point
-     └── Unseen
-         ├── Description
-         ├── Img
-         └── Point
+LAVIS
+└───data
+     └─── Full_view
+     │    ├── Seen
+     │    │   ├── Description
+     │    │   ├── Img
+     │    │   └── Point
+     │    └── Unseen
+     │        ├── Description
+     │        ├── Img
+     │        └── Point
+     └─── Partial_view
+     │    ├── Seen
+     │    │   ├── Description
+     │    │   ├── Img
+     │    │   └── Point
+     │    └── Unseen
+     │        ├── Description
+     │        ├── Img
+     │        └── Point
+     └─── Rotation_view
+          ├── Seen
+          │   ├── Description
+          │   ├── Img
+          │   └── Point
+          └── Unseen
+              ├── Description
+              ├── Img
+              └── Point
+
 ```
 ## Install
 ```
+git clone https://github.com/cn-hezhu/LMAffordance3D.git
+cd LMAffordance3D
 conda create -n lmaffordance3d python=3.8 -y
 conda activate otvic
 pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
@@ -60,7 +64,10 @@ python train.py --cfg-path xxx.yaml
 # python train.py --cfg-path ./lavis/projects/affordance/LMAffordance3D/Rotation_view/Seen.yaml
 # python train.py --cfg-path ./lavis/projects/affordance/LMAffordance3D/Rotation_view/Uneen.yaml
 ```
-For visualization, you can modify the path of image and point, and then run ```visualization.py```.
+For visualization, you can modify the path of image and point in the ```visualization.py``` file, and then run the following command:
+```python
+python visualization.py
+```
 
 <!--
 ## Bibtex
