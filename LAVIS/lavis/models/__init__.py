@@ -94,7 +94,6 @@ __all__ = [
     "XBertLMHeadDecoder",
     "GPTDialogue",
     "LMAffordance3D",
-    "PointNet2",
 ]
 
 
