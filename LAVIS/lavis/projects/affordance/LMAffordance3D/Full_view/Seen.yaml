@@ -20,13 +20,13 @@ datasets:
       type: 'Seen'
       annotations:
         train:
-          point_path: './data/Full_view/Seen/Point_Train.txt'
-          img_path: './data/Full_view/Seen/Img_Train.txt'
-          description_path: './data/Full_view/Seen/Description_Train.txt'
+          point_path: './Data/Full_view/Seen/Point_Train.txt'
+          img_path: './Data/Full_view/Seen/Img_Train.txt'
+          description_path: './Data/Full_view/Seen/Description_Train.txt'
         val:
-          point_path: './data/Full_view/Seen/Point_Test.txt'
-          img_path: './data/Full_view/Seen/Img_Test.txt'
-          description_path: './data/Full_view/Seen/Description_Test.txt'
+          point_path: './Data/Full_view/Seen/Point_Test.txt'
+          img_path: './Data/Full_view/Seen/Img_Test.txt'
+          description_path: './Data/Full_view/Seen/Description_Test.txt'
 
 run:
   task: affordance
