@@ -48,7 +48,7 @@ cd LMAffordance3D
 conda create -n lmaffordance3d python=3.8 -y
 conda activate lmaffordance3d
 pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
-pip install requirements.txt -r
+pip install -r requirements.txt
 ```
 
 ## Run
